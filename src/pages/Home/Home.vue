@@ -190,10 +190,10 @@ function sendEmail() {
                   class="tw-absolute tw-bottom-0 tw-left-0 tw-h-[2px] tw-w-0 tw-bg-[#e38007] tw-transition-all tw-duration-500 tw-ease-in-out group-hover:tw-w-20 md:group-hover:tw-w-[76px]"></span>
                  </div>
                </div>
-                 <div class="">
+                 <!-- <div class="">
                   
                   <span class=" tw-cursor-pointer tw-bg-gradient-to-br tw-from-[#e38007] tw-via-[#e75334] tw-to-[#d11f59] tw-text-white tw-py-2 tw-px-3 tw-rounded-md">Logout</span>
-                 </div>
+                 </div> -->
 
                </div>
                <div
