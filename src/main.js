@@ -11,4 +11,8 @@ const app = createApp(App)
 app.use(createPinia())
 app.use(router)
 
+import {setupEcharts} from "./composables/echarts.js"
+import VChart from "vue-echarts"
+setupEcharts()
+
 app.mount('#app')

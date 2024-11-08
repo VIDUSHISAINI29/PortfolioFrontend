@@ -3,6 +3,7 @@ import { ref } from "vue";
 import emailjs from "@emailjs/browser";
 
 import { useGlobalStore } from "@/stores/global";
+import AnimateTitle from '@/components/AnimateTitle.vue'
 const global = useGlobalStore();
 
 function displayMenubar() {
@@ -170,22 +171,22 @@ function sendEmail() {
                   class="tw-hidden md:tw-w-[50%] md:tw-gap-6   lg:tw-w-[50%] tw-items-center  lg:tw-gap-10 tw-text-lg tw-font-semibold tw-text-white md:tw-flex tw-justify-between">
                <div class="tw-hidden md:tw-w-[60%] md:tw-gap-6   lg:tw-w-[50%] tw-items-center  lg:tw-gap-10 tw-text-lg tw-font-semibold tw-text-white md:tw-flex">
                   <div class="tw-flex tw-flex-col tw-relative tw-group tw-cursor-pointer">
-                  <span class="hover:tw-text-[#e38007] tw-transition-all tw-duration-500">Skills</span>
+                  <a href="#sectionSkills" class="hover:tw-text-[#e38007] tw-transition-all tw-duration-500">Skills</a>
                   <span
                   class="tw-absolute tw-bottom-0 tw-left-0 tw-h-[2px] tw-w-0 tw-bg-[#e38007] tw-transition-all tw-duration-500 tw-ease-in-out group-hover:tw-w-20 md:group-hover:tw-w-12"></span>
                  </div>
                  <div class="tw-flex tw-flex-col tw-relative tw-group tw-cursor-pointer">
-                  <span class="hover:tw-text-[#e38007] tw-transition-all tw-duration-500">Education</span>
+                  <a href="#sectionEducations"  class="hover:tw-text-[#e38007] tw-transition-all tw-duration-500">Education</a>
                   <span
                   class="tw-absolute tw-bottom-0 tw-left-0 tw-h-[2px] tw-w-0 tw-bg-[#e38007] tw-transition-all tw-duration-500 tw-ease-in-out group-hover:tw-w-20 md:group-hover:tw-w-[84px]"></span>
                  </div>
                  <div class="tw-flex tw-flex-col tw-relative tw-group tw-cursor-pointer">
-                  <span class="hover:tw-text-[#e38007] tw-transition-all tw-duration-500">Projects</span>
+                  <a href="#sectionProjects" class="hover:tw-text-[#e38007] tw-transition-all tw-duration-500">Projects</a>
                   <span
                   class="tw-absolute tw-bottom-0 tw-left-0 tw-h-[2px] tw-w-0 tw-bg-[#e38007] tw-transition-all tw-duration-500 tw-ease-in-out group-hover:tw-w-20 md:group-hover:tw-w-[68px]"></span>
                  </div>
                  <div class="tw-flex tw-flex-col tw-relative tw-group tw-cursor-pointer">
-                  <span class="hover:tw-text-[#e38007] tw-transition-all tw-duration-500">Contacts</span>
+                  <a href="#sectionContacts" class="hover:tw-text-[#e38007] tw-transition-all tw-duration-500">Contacts</a>
                   <span
                   class="tw-absolute tw-bottom-0 tw-left-0 tw-h-[2px] tw-w-0 tw-bg-[#e38007] tw-transition-all tw-duration-500 tw-ease-in-out group-hover:tw-w-20 md:group-hover:tw-w-[76px]"></span>
                  </div>
@@ -227,15 +228,16 @@ function sendEmail() {
                   <span class="tw-flex tw-text-gray-300 sm:tw-text-lg">
                      Hey! I am
                      <span
-                        class="tw-ml-1 tw-hidden tw-bg-gradient-to-br tw-from-[#e38007] tw-via-[#e75334] tw-to-[#d11f59] tw-bg-clip-text tw-text-4xl tw-font-bold tw-leading-none tw-text-transparent md:tw-flex md:tw-text-2xl">
+                        class="tw-ml-1 tw-hidden tw-bg-gradient-to-br tw-from-[#e38007] tw-via-[#e75334] tw-to-[#d11f59] tw-bg-clip-text tw-text-xl tw-font-bold tw-leading-none tw-text-transparent md:tw-flex md:tw-text-2xl">
                         VIDUSHI
                      </span>
                      <span class="md:tw-hidden">Vidushi,</span>
                   </span>
                   <span
-                     class="tw-bg-gradient-to-br tw-from-[#e38007] tw-via-[#e75334] tw-to-[#d11f59] tw-bg-clip-text tw-text-4xl tw-font-bold tw-leading-none tw-text-transparent md:tw-text-5xl lg:tw-text-6xl">
+                     class="tw-bg-gradient-to-br md:tw-hidden tw-from-[#e38007] tw-via-[#e75334] tw-to-[#d11f59] tw-bg-clip-text tw-text-4xl tw-font-bold tw-leading-none tw-text-transparent md:tw-text-5xl lg:tw-text-6xl">
                      Fullstack Web Developer,
                   </span>
+                <AnimateTitle />
                   <span class="tw-flex tw-text-gray-300 sm:tw-text-lg">
                      I blend creativity with code, crafting seamless
                      interactions and powerful backend solutions to bring ideas
@@ -248,7 +250,7 @@ function sendEmail() {
 
             <!-- # Skills section  Begin -->
 
-            <div
+            <div id="sectionSkills"
                class="tw-flex tw-w-4/5 tw-flex-col tw-items-center sm:tw-w-full">
                <div
                   class="tw-group tw-relative tw-flex  tw-w-11/12 tw-rounded-lg tw-bg-white tw-bg-opacity-10 tw-p-1 tw-text-2xl tw-font-semibold tw-text-[#e75334] sm:tw-w-full md:tw-py-3 md:tw-text-4xl">
@@ -312,7 +314,7 @@ function sendEmail() {
 
             <!--# Educations Section Begin -->
 
-            <div
+            <div id="sectionEducations"
                class="tw-mt-12 tw-flex tw-w-4/5 tw-flex-col tw-items-center sm:tw-w-full">
                <div
                   class="tw-group tw-relative tw-mb-6 tw-flex  tw-w-11/12 tw-rounded-lg tw-bg-white tw-bg-opacity-10 tw-p-1 tw-text-2xl tw-font-semibold tw-text-[#e38007] sm:tw-w-full md:tw-py-3 md:tw-text-4xl">
@@ -360,7 +362,7 @@ function sendEmail() {
 
             <!--# Projects Section Begin -->
 
-            <div
+            <div id="sectionProjects"
                class="tw-m-4 tw-mt-8 tw-flex tw-w-4/5 tw-flex-col tw-items-center sm:tw-w-full">
                <div
                   class="tw-group tw-relative tw-m-2 tw-flex  tw-w-11/12 tw-rounded-lg tw-bg-white tw-bg-opacity-10 tw-p-1 tw-text-2xl tw-font-semibold tw-text-[#e38007] sm:tw-w-full md:tw-py-3 md:tw-text-4xl">
@@ -372,7 +374,7 @@ function sendEmail() {
 
             <!--# Contact Section Begin -->
 
-            <div
+            <div id="sectionContacts"
                class="tw-m-4 tw-mt-8 tw-flex tw-w-4/5 tw-flex-col tw-items-center sm:tw-w-full">
                <div
                   class="tw-group tw-relative tw-m-2 tw-flex tw-w-11/12 tw-rounded-lg tw-bg-white tw-bg-opacity-10 tw-p-1 tw-text-2xl tw-font-semibold tw-text-[#e38007] sm:tw-w-full md:tw-py-3 md:tw-text-4xl">

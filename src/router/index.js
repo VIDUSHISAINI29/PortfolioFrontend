@@ -21,6 +21,11 @@ const router = createRouter({
                name: "contact",
                component: () => import("@/pages/Home/HomeContactForm.vue"),
             },
+            {
+               path: "/contact",
+               name: "contact",
+               component: () => import("@/pages/Home/HomeContactForm.vue"),
+            },
          ],
       },
    ],
