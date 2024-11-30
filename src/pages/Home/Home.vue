@@ -31,7 +31,7 @@ function animateLogoMouseOut() {
    isLogoHovered.value = false;
 }
 
-highlight();
+// highlight();
 
 const frontendSkillsImgArray = [
    "/Images/htm.png",
@@ -211,14 +211,14 @@ function sendEmail() {
             <div
                class="hero1 tw-m-10 tw-flex tw-w-full tw-flex-col tw-items-center tw-p-2 sm:tw-flex-row sm:tw-gap-20">
                <div
-                  class="tw-flex tw-w-[240px] tw-items-center tw-justify-center tw-rounded-2xl tw-bg-white tw-bg-opacity-10 tw-p-1 sm:tw-w-full sm:tw-py-12">
+                  class="tw-flex tw-w-[240px]  tw-items-center tw-justify-center tw-rounded-2xl  tw-bg-opacity-10 tw-p-1 sm:tw-w-full sm:tw-py-12">
                   <div
                      :class="[
-                        'image-container tw-flex tw-h-[220px] tw-w-[220px] tw-items-center tw-justify-center tw-rounded-[50%] tw-p-2 tw-py-2 tw-transition tw-duration-500',
+                        'image-container tw-flex tw-h-80 tw-w-80 tw-items-center tw-justify-center tw-rounded-[50%] tw-p-2 tw-py-2 tw-transition tw-duration-500',
                         isHighlighted ? 'tw-bg-[#e38007]' : '',
                      ]">
                      <img
-                        class="tw-h-52 tw-w-52 tw-rounded-[50%]"
+                        class="tw-h-72 tw-w-72 tw-rounded-[50%]"
                         src="/Images/_VIDUSHI_SAINI.jpg"
                         alt="" />
                   </div>
@@ -253,7 +253,7 @@ function sendEmail() {
             <div id="sectionSkills"
                class="tw-flex tw-w-4/5 tw-flex-col tw-items-center sm:tw-w-full">
                <div
-                  class="tw-group tw-relative tw-flex  tw-w-11/12 tw-rounded-lg tw-bg-white tw-bg-opacity-10 tw-p-1 tw-text-2xl tw-font-semibold tw-text-[#e75334] sm:tw-w-full md:tw-py-3 md:tw-text-4xl">
+                  class="tw-group tw-relative tw-flex  tw-w-11/12 tw-rounded-lg tw-bg-white tw-bg-opacity-10 tw-p-1 tw-text-2xl tw-font-semibold tw-text-[#e38007] sm:tw-w-full md:tw-py-3 md:tw-text-4xl">
                   <span class="tw-ml-3 tw-cursor-pointer">Skills</span>
                   <span
                      class="tw-absolute tw-bottom-0 tw-left-0 tw-mb-1 tw-ml-[17px] tw-h-[2px] tw-w-0 tw-bg-[#e38007] tw-transition-all tw-duration-500 tw-ease-in-out group-hover:tw-w-14 md:group-hover:tw-w-20"></span>
